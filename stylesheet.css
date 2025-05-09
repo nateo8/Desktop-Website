@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+
+    .header-left,
+    .header-center,
+    .header-right {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-center {
+        justify-content: center;
+
+        img {
+            padding-top: 15px;
+            max-height: 85px;
+        }
+    }
+
+    .header-left {
+        img {
+            max-height: 100px;
+        }
+    }
+
+    .header-right {
+        .email-icon {
+            max-height: 32px;
+            width: auto;
+            margin-left: 15px;
+        }
+
+        .linkedin-icon {
+            max-height: 45px;
+            width: auto;
+            margin-left: 15px;
+        }
+    }
+}
+
+nav {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid black;
+
+    a {
+        color: black;
+        margin: 0 30px;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover,
+        &.active {
+            text-decoration: underline;
+        }
+    }
+}
+
+.introduction {
+    text-align: center;
+    margin-top: 0;
+
+    h1 {
+        margin-bottom: 0;
+        font-size: 2em;
+    }
+
+    p {
+        margin-top: 0;
+        font-size: 1.1em;
+    }
+}
+
+main {
+    padding: 2em;
+}
+
+#portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+}
+
+footer {
+    border-top: 3px solid black;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    font-weight: normal;
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+#contact {
+    background-color: white;
+    padding: 20px 0 50px 20px;
+
+    .contact-info {
+        p {
+            margin: 8px 0;
+        }
+    }
+}
+

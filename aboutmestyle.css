@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: white;
+
+        .header-left,
+        .header-center,
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-left {
+            img {
+                max-height: 100px;
+            }
+        }
+
+        .header-center {
+            justify-content: center;
+            flex: 1;
+
+            img {
+                padding-top: 15px;
+                max-height: 85px;
+                margin-left: 20px;
+            }
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .email-icon {
+        max-height: 32px;
+        width: auto;
+        margin-left: 15px;
+    }
+
+    .linkedin-icon {
+        max-height: 45px;
+        width: auto;
+        margin-left: 15px;
+    }
+
+    nav {
+        background-color: white;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid black;
+
+        a {
+            color: black;
+            margin: 0 30px;
+            text-decoration: none;
+            font-weight: bold;
+
+            &:hover,
+            &.active {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .about-section {
+        display: flex;
+        align-items: flex-start;
+        margin: 0 auto;
+        padding-bottom: 120px;
+        /*gap: 40 px;*/
+        /*padding: 40 px;*/
+        /*max-width: 1000 px;*/
+    }
+
+    .headshot {
+        position: relative;
+        width: fit-content;
+        display: inline-block;
+        /*margin: 100 px;*/
+
+        .headshot-img {
+            display: block;
+            width: 400px;
+            height: auto;
+            margin: 50px 20px 0 75px;
+            /*border: 1 px solid black;*/
+        }
+
+        .pixel-logo {
+            position: absolute;
+            bottom: 20px;
+            right: -170px;
+            width: 150px;
+            height: auto;
+            /* border: 1 px solid black;*/
+        }
+    }
+
+    .aboutmetext {
+        max-width: 600px;
+        min-width: 350px;
+        margin: 100px 0 0 20px;
+        text-align: left;
+        color: black;
+        font-family: Arial, sans-serif;
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 0 0 5px 0;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-top: 0;
+        }
+    }
+}
+
+footer {
+    border-top: 3px solid black;
+    background-color: white;
+    color: black;
+    font-weight: normal;
+    text-decoration: none;
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+#contact {
+    background-color: white;
+    padding: 20px 0 50px 20px;
+
+    .contact-info {
+        p {
+            margin: 8px 0;
+            text-decoration: none;
+        }
+    }
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-top: 20px;
+
+    label {
+        margin: 10px 0 5px 0;
+        font-weight: bold;
+    }
+
+    input,
+    textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    button {
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1rem;
+
+        &:hover {
+            background-color: #333;
+        }
+    }
+}
